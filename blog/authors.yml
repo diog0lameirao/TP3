@@ -2,11 +2,11 @@ alexandre:
   name: Alexandre Formozinho
   title: Analista
   url: https://alexandreformozinho.com
-  image_url: 
+  image_url: https://example.com
   page: false
   socials:
-    x: 
-    linkedin: 
-    github: 
-    newsletter: 
+    x: https://example.com
+    linkedin: https://example.com
+    github: https://example.com
+    newsletter: https://example.com
 
