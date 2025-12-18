@@ -29,7 +29,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'LuigiPlayer1', // Usually your GitHub org/user name.
   projectName: 'TP3', // Usually your repo name.
-  deploymentBranch: "gh-pages",
+  deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
