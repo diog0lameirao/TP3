@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Formula 1',
+  tagline: 'Velocidade, tecnologia e emoção nas pistas',
+  favicon: 'img/f1.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -82,11 +82,13 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-      navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+      
+        navbar: {
+      title: 'Formula 1',
+      logo: {
+        alt: 'Logo Formula 1',
+        src: 'img/f1-logo.svg',
+
         },
         items: [
           {
