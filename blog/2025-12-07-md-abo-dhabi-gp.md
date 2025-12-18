@@ -6,6 +6,7 @@ tags: [facebook, hello, docusaurus]
 ---
 
 ### Detalhes da Corrida
+
 |                    |                                                    |
 |--------------------|----------------------------------------------------|
 | Data               | 7 de Dezembro de 2025                              |
