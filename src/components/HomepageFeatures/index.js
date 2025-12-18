@@ -2,44 +2,47 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
+// Atualizamos a lista com temas de F1
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Equipas e Pilotos',
+    // Pode manter estes SVGs temporariamente ou substituí-los por ícones de carros/capacetes
+    img: require('@site/static/img/equipas.png').default, 
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Conheça a grelha atual, as estatísticas de cada piloto e a história 
+        das escuderias lendárias como Ferrari, McLaren e Williams.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Circuitos do Mundial',
+    img: require('@site/static/img/monaco.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Dos muros de Mónaco às retas de Monza. Explore detalhes técnicos, 
+        zonas de DRS e os recordes de cada pista do calendário.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Engenharia de Ponta',
+    img: require('@site/static/img/carro.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Entenda como funcionam os motores híbridos, o efeito de solo e a 
+        tecnologia que faz estes carros os mais rápidos do mundo.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({img, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {/* Aqui usamos a tag <img> normal */}
+        <img src={img} className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
