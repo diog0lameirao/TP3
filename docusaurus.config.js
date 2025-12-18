@@ -87,7 +87,7 @@ const config = {
       title: 'Formula 1',
       logo: {
         alt: 'Logo Formula 1',
-        src: 'img/f1-logo.svg',
+        src: 'img/f1-logo.png',
 
         },
         items: [
