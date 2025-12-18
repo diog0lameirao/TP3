@@ -20,7 +20,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            🚦 Comece sua jornada na Formula 1
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/blog">
+            🏁 Últimas notícias e corridas
           </Link>
         </div>
       </div>
@@ -32,11 +37,22 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Bem-vindo ao ${siteConfig.title}`}
+      description="Site dedicado à velocidade, tecnologia e emoção da Formula 1">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <section className={styles.heroBanner}>
+          <div className="container">
+            <h2>Descubra mais sobre:</h2>
+            <ul>
+              <li>🏎️ Pilotos lendários</li>
+              <li>🏆 Equipes e construtores</li>
+              <li>🌍 Circuitos icônicos</li>
+              <li>⚙️ Tecnologia e inovação</li>
+            </ul>
+          </div>
+        </section>
       </main>
     </Layout>
   );
