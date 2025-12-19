@@ -12,7 +12,7 @@ const FeatureList = [
         das escuderias lendárias como Ferrari, McLaren e Williams.
       </>
     ),
-    // Sem link para este cartão
+    link: 'https://www.f1mania.net/formula-1-pilotos-e-equipes/',
   },
   {
     title: 'Circuitos do Mundial',
@@ -23,7 +23,6 @@ const FeatureList = [
         zonas de DRS e os recordes de cada pista do calendário.
       </>
     ),
-    // ADICIONADO: Link específico para circuitos
     link: 'https://www.f1-fansite.com/pt/f1%20circuits/',
   },
   {
@@ -35,12 +34,11 @@ const FeatureList = [
         tecnologia que faz estes carros os mais rápidos do mundo.
       </>
     ),
-    // Sem link para este cartão
+    link: '/enciclopedia_tecnica',
   },
 ];
 
 function Feature({img, title, description, link}) {
-  // Criamos o conteúdo da imagem
   const ImageElement = (
     <img 
       src={img} 
@@ -53,9 +51,12 @@ function Feature({img, title, description, link}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        {/* Se existir um link, envolvemos a imagem com <a>, senão mostramos apenas a imagem */}
         {link ? (
-          <a href={link} target="_blank" rel="noopener noreferrer">
+          <a 
+            href={link} 
+            target={link.startsWith('http') ? "_blank" : "_self"} 
+            rel="noopener noreferrer"
+          >
             {ImageElement}
           </a>
         ) : (
