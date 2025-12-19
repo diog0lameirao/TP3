@@ -2,11 +2,9 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
-// Atualizamos a lista com temas de F1
 const FeatureList = [
   {
     title: 'Equipas e Pilotos',
-    // Pode manter estes SVGs temporariamente ou substituí-los por ícones de carros/capacetes
     img: require('@site/static/img/equipas.png').default, 
     description: (
       <>
@@ -14,6 +12,7 @@ const FeatureList = [
         das escuderias lendárias como Ferrari, McLaren e Williams.
       </>
     ),
+    // Sem link para este cartão
   },
   {
     title: 'Circuitos do Mundial',
@@ -24,6 +23,8 @@ const FeatureList = [
         zonas de DRS e os recordes de cada pista do calendário.
       </>
     ),
+    // ADICIONADO: Link específico para circuitos
+    link: 'https://www.f1-fansite.com/pt/f1%20circuits/',
   },
   {
     title: 'Engenharia de Ponta',
@@ -34,15 +35,32 @@ const FeatureList = [
         tecnologia que faz estes carros os mais rápidos do mundo.
       </>
     ),
+    // Sem link para este cartão
   },
 ];
 
-function Feature({img, title, description}) {
+function Feature({img, title, description, link}) {
+  // Criamos o conteúdo da imagem
+  const ImageElement = (
+    <img 
+      src={img} 
+      className={styles.featureSvg} 
+      alt={title} 
+      style={link ? { cursor: 'pointer' } : {}} 
+    />
+  );
+
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        {/* Aqui usamos a tag <img> normal */}
-        <img src={img} className={styles.featureSvg} alt={title} />
+        {/* Se existir um link, envolvemos a imagem com <a>, senão mostramos apenas a imagem */}
+        {link ? (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            {ImageElement}
+          </a>
+        ) : (
+          ImageElement
+        )}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
