@@ -24,8 +24,8 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="placeholder">
-            🏎️ Login
+            to="enciclopedia_tecnica">
+            🏎️ Enciclopédia Técnica
           </Link>
           <Link
             className="button button--secondary button--lg"
