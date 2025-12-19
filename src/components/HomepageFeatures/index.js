@@ -34,7 +34,7 @@ const FeatureList = [
         tecnologia que faz estes carros os mais rápidos do mundo.
       </>
     ),
-    link: '/enciclopedia_tecnica',
+    link: 'enciclopedia_tecnica',
   },
 ];
 
