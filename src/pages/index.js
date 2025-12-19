@@ -24,6 +24,11 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
+            to="placeholder">
+            🏎️ Login
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
             to="/blog">
             🏁 Últimas notícias e corridas
           </Link>
