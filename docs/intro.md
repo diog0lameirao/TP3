@@ -6,7 +6,7 @@ A Fórmula 1 (F1) é a mais alta categoria do automobilismo internacional de mon
 
 ---
 
-## Origens da Fórmula 1 (Antes de 1950)
+## Origens da Fórmula 1 (Antes de 1950) 
 
 ![Corridas de Grandes Prémios antigos](historia/2.jpg)
 
