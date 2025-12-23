@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunktp_3=globalThis.webpackChunktp_3||[]).push([[254],{4370:s=>{s.exports=JSON.parse('{"tags":[{"label":"F1","permalink":"/TP3/blog/tags/f1","description":"F1 tag description","count":1}]}')}}]);

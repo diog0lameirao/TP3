@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunktp_3=globalThis.webpackChunktp_3||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Abu Dhabi","permalink":"/TP3/blog/abu-dhabi-gp","unlisted":false,"date":"2025-12-07T00:00:00.000Z"},{"title":"Welcome","permalink":"/TP3/blog/welcome","unlisted":false,"date":"2021-08-26T00:00:00.000Z"}]}')}}]);
